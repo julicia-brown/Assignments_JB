@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Assignment One</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class= "grid-container"> 
+  <script src="script.js"></script>
+  <!--<script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer>
+  </script> -->
+    
+  <header class ="head">
+    <img id = "logo" src ="Images/starrbanner.jpg" height="150"/>
+    <h3>Our Form</h3>
+  </header>
+    
+  <nav class="nav">
+    <ul id= "menu">
+    <li><a href = "index.html"> Home</a></li>
+    <li><a href = "page1.html"> Page 1</a></li>
+    <li><a href = "page2.html"> Page 2</a></li>
+    <li><a href = "page3.html"> Page 3</a></li>
+    <li><a href = "https://www.columbusstate.edu/"> CSU Main Page </a></li>
+    </ul>
+  </nav>
+    
+  <main class="main">
+    <form name="myFrom" action="https://webdevbasics.net/scripts/yoga.php" method="post" onSubmit=" return checkPassword(this)" onSubmit="return userName()">
+      
+      <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" placeholder="Jane" size="10" maxlength="50"><br>
+      <br>
+      <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" placeholder="Doe" size="10" maxlength="50" ><br>
+      <br>
+      <label for="birthyr">Birth Year:</label><br>
+        <input type="number" id="birthyr" name="birthyr" maxlength="4" size="4" placeholder="2002" min="1900" max="2022"><br>
+      <br>
+      <label for="email">* E-mail:</label><br>
+        <input type="email" id="email" name="email" placeholder="my_name@email.com"required><br>
+      <br>
+      <label for="username">* Username:</label><br>
+        <input type="text" id="username" name="username" placeholder="UserUser" maxlength="10" minlength="5" required><br>
+      <br>
+      <label for="pwd">* Password:</label><br>
+        <input type="password" id="password1" name="password1" minlength="8" required>
+      <br>
+      <label for="pwd2">* Re-enter Password:</label><br>
+        <input type="password" id="ppassword2" name="password2" minlength="8" required>
+      <br> 
+      <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="123-456-6789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" >
+      <br> 
+      
+      
+      
+        <input type="submit" value="Submit">
+        <input type="reset">
+
+    </form>
+  </main>
+    
+  <footer class="foot">
+    <p>Juli's Business</p>
+    <p>Contact number: 678-888-5652
+    </br>Address: 512 River Way, Atlanta GA 33878 </p>
+  </footer>
+  </div>
+</body>
+
+</html>
